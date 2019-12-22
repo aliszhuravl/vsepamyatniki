@@ -1,0 +1,97 @@
+.tabs__item {
+  display: none;
+
+  &.active {
+    display: block;
+    height: 100%;
+  }
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+    &__buttons {
+      width: 280px;
+      margin-right: 32px;
+      list-style-type: none;
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+        li {
+          list-style-type: none;
+          margin-bottom: 12px;
+          height: 60px;
+          border: 1px solid #3b3b3b;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 0 20px;
+            span {
+              margin-right: 20px;
+            }
+        }
+      .tabs__btn {
+        transition: all 0.3s;
+        cursor: pointer;
+        &:hover {
+          border: 1px solid $color-base;
+          background-color: $color-base;
+          color: #fff;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .active {
+        border: 1px solid $color-base;
+        color: $color-base;
+      }
+    }
+    &__content {
+      max-width: 450px;
+      width: 100%;
+      margin-right: 32px;
+    }
+}
+
+.item_extra {
+  margin-bottom: 60px;
+  .tabs {
+    display: block;
+    &__buttons {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 40px;
+        .tabs__btn {
+          margin-bottom: 0;
+          border: 0;
+          height: auto;
+          padding: 0;
+          margin-right: 40px;
+          font-size: 16px;
+          font-family: $font-family_semibold;
+          border-bottom: 1px dashed transparent;
+          transition: all 0.2s;
+          &:hover {
+            border-color: transparent;
+            background-color: transparent;
+            color: $color-base;
+          }
+        }
+      .active {
+        border-bottom: 1px dashed $color-base;
+      }
+    }
+    .tabs__content {
+      width: 100%;
+      max-width: 100%;
+    }
+    .tabs__item {
+      width: 100%;
+    }
+  }
+}

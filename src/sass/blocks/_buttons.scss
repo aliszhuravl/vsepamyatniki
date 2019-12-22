@@ -1,0 +1,72 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 60px;
+  padding: 5px 24px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $color-base;
+  background-color: $color-white;
+  color: $color-base;
+  font-family: $font-family-medium;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: none;
+  font-size: 16px;
+  min-width: 240px;
+  transition: all 0.3s;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+  }
+  
+  &:hover,
+  &:focus {
+    border-color: #000;
+    background-color: transparent;
+    color: #000;
+  }
+  
+  &:active {
+    background-color: darken($color-gray-10, 5%);
+  }
+}
+
+.btn_green {
+  background-color: $color-base;
+  color: #fff;
+  min-width: 240px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 1;
+      outline: 0;
+      border-color: transparent;
+      color: #fff;
+      text-decoration: none;
+      background-color: #6ab277;
+    }
+}
+
+.btn_disabled {
+  border-color: $color-gray-40;
+  background-color: $color-gray-10;
+  color: $color-gray-60;
+  cursor: default;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $color-gray-40;
+    background-color: $color-gray-10;
+    color: $color-gray-60;
+  }
+}

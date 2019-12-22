@@ -1,0 +1,162 @@
+//some styles
+
+.phones_block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  &_top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  &_bottom {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.phone {
+  margin-right: 50px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.ico_text {
+  display: flex;
+  align-items: flex-start;
+  .ico {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    margin-top: 4px;
+    img {
+      display: block;
+    }
+  }
+  .ico_p {
+    a {
+      font-family: $font-family_semibold;
+      color: #000;
+      text-decoration: none;
+      border-bottom: 1px dashed #000;
+      font-size: 15px;
+      &:hover {
+        color: $color-base;
+        border-color: $color-base;
+      }
+    }
+    p {
+      margin-top: 4px;
+      font-size: 12px;
+      opacity: 0.5;
+    }
+  }
+}
+
+.h_rate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  p {
+    font-size: 18px;
+    font-family: $font-family_semibold;
+  }
+}
+
+.rate {
+  border-bottom: 1px solid #d0d0d0;
+  padding-bottom: 20px;
+  margin-bottom: 32px;
+    img {
+      margin-right: 2px;
+    }
+}
+
+.no_divider {
+  border-bottom: none !important;
+  margin-bottom: 24px !important;
+  padding-bottom: 0 !important;
+}
+
+.btn_catalog {
+  margin-bottom: 32px;
+}
+
+.price_list {
+  li {
+    margin-bottom: 12px !important;
+  }
+}
+
+.reviews {
+  &_box {
+    &__text {
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
+  }
+  .rate {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.filter_list {
+  display: none;
+}
+
+.btn_catalog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+    &:hover {
+      .btn_next {
+        background-color: #000;
+          &:after {
+            border-color: #000;
+          }
+      }
+    }
+}
+
+.btn_next {
+  margin-left: 12px;
+  position: relative;
+  z-index: 9;
+  width: 40px;
+  height: 1px;
+  content: '';
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  background-color: $color-base;
+    &:after {
+      position: absolute;
+      top: -3px;
+      right: 0;
+      width: 7px;
+      height: 7px;
+      content: '';
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      border-top: 1px solid $color-base;
+      border-right: 1px solid $color-base;
+    }
+}
+
+.img_pin {
+  img {
+    width: 12px;
+  }
+}
+
+.link_container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,50 @@
+.link {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  transition: all, .2s;
+  color: $color-base;
+  font-family: $font-family_medium;
+
+  &:hover {
+    color: #000;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+.link_simple {
+  color: #000;
+  text-decoration: none;
+    &:hover {
+      color: $color-base;
+    }
+}
+
+.link-dashed {
+  color: $color-base;
+  border-bottom: 1px dashed $color-base;
+    &:hover {
+      border-color: transparent;
+    }
+}
+
+.link_dark {
+  border-bottom: 1px dashed #fff;
+  color: #fff !important;
+    &:hover {
+      border-color: transparent;
+    }
+}
+
+.link_img {
+  display: flex;
+  align-items: center;
+    img {
+      margin-right: 6px;
+    }
+}

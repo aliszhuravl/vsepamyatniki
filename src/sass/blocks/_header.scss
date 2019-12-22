@@ -1,0 +1,118 @@
+.header {
+  @extend .layout-padding;
+  background-color: #3b3b3b;
+}
+
+.header__inner {
+  @extend .layout-inner;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &_menu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header__main {
+  @extend .layout-inner;
+  margin-bottom: 0;
+  &_top {
+    background-color: #fff;
+    padding: 36px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3px;
+    .header_contacts {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .logo {
+      img {
+        margin-bottom: 8px;
+        max-width: 300px;
+      }
+      p {
+        font-family: $font-family_medium;
+        line-height: 16px;
+      }
+    }
+  }
+  &_bottom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    .search {
+      background-color: #fff;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      border: 1px solid #d0d0d0;
+      border-right: 0;
+        a {
+          margin-right: 24px;
+        }
+      input {
+        height: 54px;
+        width: calc(100% - 300px);
+        border-right: 0;
+        border-left: 0;
+        padding: 0;
+        outline: none;
+        padding-left: 24px;
+        margin-right: 24px;
+        border: 1px solid #d0d0d0;
+
+        &::-webkit-input-placeholder {
+          opacity: 0.7;
+          font-size: 16px;
+        }
+        &::-moz-placeholder {
+          opacity: 0.7;
+          font-size: 16px;
+        }
+        &:focus::-webkit-input-placeholder {color: transparent; transition: color .3s;}
+        &:focus::-moz-placeholder          {color: transparent; transition: color .3s;}
+      }
+    }
+    .cart {
+      background-color: #fff;
+      height: 54px;
+      min-width: 220px;
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #d0d0d0;
+      border-right: 0;
+      img {
+        margin-right: 12px;
+        opacity: 0.8;
+      }
+      a {
+        font-size: 14px;
+        color: #000;
+        border-bottom: 0;
+        font-family: $font-family_medium;
+          &:hover {
+            color: $color-base;
+          }
+      }
+      &:last-child {
+        border: 1px solid $color-base;
+        min-width: 160px;
+        a {
+          color: $color-base;
+        }
+      }
+    }
+  }
+}
