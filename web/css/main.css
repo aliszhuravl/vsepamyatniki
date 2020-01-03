@@ -2256,18 +2256,12 @@ h3 {
 
 /* Slider */
 
-.slick-loading .slick-list {
-	background: #fff url('./ajax-loader.gif') center center no-repeat;
-}
-
 /* Icons */
 
 @font-face {
 	font-family: 'slick';
 	font-weight: normal;
 	font-style: normal;
-	src: url('./fonts/slick.eot');
-	src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
 
 /* Arrows */
@@ -2360,7 +2354,6 @@ h3 {
 }
 
 .slick-dots li button:before {
-	font-family: 'slick';
 	font-size: 6px;
 	line-height: 20px;
 	position: absolute;
@@ -3893,7 +3886,7 @@ h3 {
 .ui-slider-handle {
 	font-weight: normal;
 	position: absolute;
-	z-index: 1;
+	z-index: 3;
 	top: 0;
 	display: block;
 	width: 15px;

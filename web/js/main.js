@@ -264,9 +264,9 @@ $(document).ready(function() {
 
     $(sliderFilter).slider({
         range: true,
-        min: 42.8,
-        max: 120.1,
-        values: [42.8, 120.1],
+        min: 6500,
+        max: 32000,
+        values: [6500, 32000],
         slide: function (event, ui) {
             $(sliderMin).text(ui.values[0]);
             $(sliderMax).text(ui.values[1]);
