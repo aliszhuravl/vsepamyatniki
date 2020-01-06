@@ -160,3 +160,40 @@
   justify-content: flex-end;
   margin-bottom: 20px;
 }
+
+.av_img {
+  width: 100%;
+  max-width: 40%;
+}
+
+.count_box {
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: 1px;
+  content: '';
+  background-color: transparent;
+    &__item {
+      display: block;
+      width: 33.33333%;
+      height: 1px;
+      position: relative;
+    }
+    .red {
+      background-color: #ffaea8;
+    }
+    .yellow {
+      background-color: #fff876;
+    }
+    .green {
+      background-color: #25ba75;
+    }
+  .arrow_count {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    border: 5px solid transparent; border-top: 8px solid #25ba75;
+  }
+}
