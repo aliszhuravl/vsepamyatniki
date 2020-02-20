@@ -496,6 +496,18 @@
         }
     }
   }
+  .popup {
+    width: 90%;
+    padding: 20px;
+      .pop_up-header {
+        h2 {
+          font-size: 20px;
+        }
+      }
+  }
+  .popup .cross img {
+    width: 20px;
+  }
 }
 
 .green {

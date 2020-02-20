@@ -9,3 +9,4 @@
 //= parts/_tabs.js
 //= parts/_fancybox.js
 //= parts/_range-slider.js
+//= parts/_popup.js
